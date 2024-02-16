@@ -1,0 +1,31 @@
+train_acc_list = []
+
+input_text = """
+Epoch 0 | Batch 0/600 | Loss 4.161476
+This epoch use 5.03 minutes
+train loss is 3.54, train acc is 13.45
+Epoch 1 | Batch 0/600 | Loss 3.192642
+This epoch use 4.80 minutes
+train loss is 2.84, train acc is 27.73
+Epoch 2 | Batch 0/600 | Loss 2.837040
+This epoch use 4.79 minutes
+train loss is 2.47, train acc is 36.00
+Epoch 3 | Batch 0/600 | Loss 2.220960
+This epoch use 4.78 minutes
+train loss is 2.25, train acc is 41.08
+Epoch 4 | Batch 0/600 | Loss 1.758541
+This epoch use 4.78 minutes
+train loss is 2.09, train acc is 44.77
+Epoch 5 | Batch 0/600 | Loss 2.196145
+This epoch use 4.77 minutes
+train loss is 2.00, train acc is 46.95
+"""
+
+lines = input_text.strip()
+lines=lines.split('\n')
+for line in lines:
+    if 'train acc' in line:
+        train_acc = float(line.split()[-1])
+        train_acc_list.append(train_acc)
+
+print(train_acc_list)
