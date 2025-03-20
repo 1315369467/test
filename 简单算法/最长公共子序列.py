@@ -42,4 +42,4 @@ Y = "bacbacb"
 lcs_result_numpy, c_matrix_numpy, b_matrix_numpy = lcs_with_path_numpy(X, Y)
 
 # 输出结果
-lcs_result_numpy, c_matrix_numpy, b_matrix_numpy
+print(lcs_result_numpy, c_matrix_numpy, b_matrix_numpy)
