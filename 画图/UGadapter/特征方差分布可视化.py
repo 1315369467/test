@@ -80,7 +80,7 @@ def visualize_variance_distribution(text_variances, text_variances_optim, n_clas
 
 if __name__ == "__main__":
     # 读取数据
-    dataset = "eurosat"
+    dataset = "dtd"
 
     text_means = torch.load(f'C:/Users/wang/Desktop/Tip-Adapter-main/caches/{dataset}/text_means_cupl_t.pt').t()
     text_variances = torch.load(f'C:/Users/wang/Desktop/Tip-Adapter-main/caches/{dataset}/text_variances_cupl_t.pt').t()

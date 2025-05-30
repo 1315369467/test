@@ -17,7 +17,7 @@ index = np.arange(len(imbalance_coefficients))
 fig, ax = plt.subplots(figsize=(5, 4))
 
 bar1 = ax.bar(index - 2*bar_width, TIM, bar_width, label='α-TIM')
-bar2 = ax.bar(index - bar_width, protoPL, bar_width, label='ProtoPL')
+bar2 = ax.bar(index - bar_width, protoPL, bar_width, label='ProtoLP')
 bar3 = ax.bar(index, PUTM, bar_width, label='PUTM')
 bar4 = ax.bar(index + bar_width, AM, bar_width, label='AM')
 bar5 = ax.bar(index + 2*bar_width, our, bar_width, label='SGMP')
