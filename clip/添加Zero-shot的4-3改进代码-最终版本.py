@@ -4,7 +4,8 @@ import numpy as np
 
 # 数据文件路径
 # file_path = '主_11数据集average.csv'
-file_path = '主_11数据集average - 副本.csv'
+# file_path = '主_11数据集average - 副本.csv'
+file_path = '主_11数据集average - new.csv'
 
 # 读取CSV数据
 with open(file_path, 'r') as file:
